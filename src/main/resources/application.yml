@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: ${bl_spring_application_name:smart-reporting-bl}
+  jackson:
+    default-property-inclusion: NON_NULL
+
+
+server:
+  port: ${bl_server_port:8081}
+
+logging:
+  level:
+    org:
+      springframework:
+        ws:
+          client:
+            MessageTracing:
+              sent: trace
+              received: trace
+          server:
+            MessageTracing:
+              sent: trace
+              received: trace
+
+env_var1: Germano
+env_var2: Mosconi
